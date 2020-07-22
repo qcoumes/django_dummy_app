@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Continent, Country, Forest, Mountain, Region, River
+from .models import Continent, Country, Disaster, Forest, Mountain, Region, River
 
 
 
@@ -44,3 +44,11 @@ class MountainAdmin(admin.ModelAdmin):
     """Admin interface for Mountain."""
     
     list_display = ('id', 'name', 'height')
+
+
+
+@admin.register(Disaster)
+class DisasterAdmin(admin.ModelAdmin):
+    """Admin interface for Disaster."""
+    
+    list_display = ('id', 'event', 'country', 'date')

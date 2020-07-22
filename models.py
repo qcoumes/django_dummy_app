@@ -68,3 +68,17 @@ class Mountain(models.Model):
     
     def __str__(self):
         return f"{self.name}"
+
+
+
+class Disaster(models.Model):
+    event = models.CharField(max_length=255)
+    date = models.DateTimeField()
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name="disasters")
+    source = models.TextField()
+    comment = models.TextField()
+    
+    
+    def __str__(self):
+        s = f"{self.event} - {self.country} - {self.date.strftime('%Y-%m-%d')}"
+        return s
