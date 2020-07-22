@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 
-class GeographyConfig(AppConfig):
-    name = 'geography'
+class DummyAppConfigConfig(AppConfig):
+    name = 'django_dummy_app'

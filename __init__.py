@@ -1,1 +1,1 @@
-default_app_config = 'geography.apps.GeographyConfig'
+default_app_config = 'django_dummy_app.apps.DummyAppConfigConfig'
