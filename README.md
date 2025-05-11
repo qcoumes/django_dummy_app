@@ -4,12 +4,14 @@ A simple django's app containing some models and some data for test purpose.
 
 ## Installation
 
-Add `django_dummy_app` to `INSTALLED_APPS` in your settings
+1. Copy the `dummy_app` directory to your Django project.
 
-To load the data :
+2. Add `dummy_app` to `INSTALLED_APPS` in your settings
 
-```
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py loaddata django_dummy_app/geographie_data.json.zip
-```
+3. To load the data :
+
+    ```
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    python3 manage.py loaddata dummy_app/geographie_data.json.zip
+    ```
