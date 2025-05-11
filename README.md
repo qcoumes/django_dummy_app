@@ -13,5 +13,5 @@ A simple django's app containing some models and some data for test purpose.
     ```
     python3 manage.py makemigrations
     python3 manage.py migrate
-    python3 manage.py loaddata dummy_app/geographie_data.json.zip
+    python3 manage.py loaddata dummy_app/geography_data.json.zip
     ```
